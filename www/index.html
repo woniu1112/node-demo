@@ -1,1 +1,13 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>third-report-h5</title><link href=/static/css/app.ccb7ac3f0b55f27ff296003fc7c66ff2.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.e1134d8fb400d120cbdf.js></script><script type=text/javascript src=/static/js/vendor.a45ddc44230c217f2f47.js></script><script type=text/javascript src=/static/js/app.c580b4bf5294c0339d16.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>test</title><script>(function(doc,win){
+        var docEl =doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function(){
+            var clientWidth = docEl.clientWidth>750 ? 750 :docEl.clientWidth;
+            if (!clientWidth) {return};
+            docEl.style.fontSize = 100 * (clientWidth/750) + 'px';
+          };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document,window)</script><link href=/static/css/app.df6104f93ed2f90e253198b6f637c091.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.77f66e6e33ef6f9f6481.js></script><script type=text/javascript src=/static/js/vendor.66da13c53e3f45e653ae.js></script><script type=text/javascript src=/static/js/app.5b3f04bc191389cbfd1b.js></script></body></html>

@@ -2,12 +2,12 @@ const connect = require('./connection')
 
 connect.init()
 
-function Login () {
+function Collect () {
 }
 
-Login.prototype.search = function (data) {
-  var searchSql = 'SELECT * FROM user WHERE name=?'
-  var addSqlParams = [data.userName]
+Collect.prototype.search = function (data) {
+  var searchSql = 'SELECT id, mark FROM vote'
+  var addSqlParams = []
   return new Promise (function (resolve, reject) {
     connect.connection.query(searchSql,addSqlParams, function(err, results, fields) {
       if (err) {
@@ -19,4 +19,4 @@ Login.prototype.search = function (data) {
   })
 }
 
-module.exports = new Login()
+module.exports = new Collect()

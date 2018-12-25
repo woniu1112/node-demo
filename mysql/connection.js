@@ -17,7 +17,7 @@ Connect.prototype.init = function () {
     database: this.database
   })
   this.connection.connect(function (err) {
-    console.log(err)
+    // console.log(err)
   });
 }
 

@@ -29,11 +29,13 @@ function Login () {
       }, function (err) {
         result.message = '服务器错误'
         result.results = err
+        res.status(500)
         res.json(result)
         next()
       }).catch(function (err) {
         result.message = '服务器错误'
         result.results = err
+        res.status(500)
         res.json(result)
         next()
       })
